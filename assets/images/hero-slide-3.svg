@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#14532d"/>
+      <stop offset="50%" stop-color="#0f766e"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg3)"/>
+  <!-- Community Unity Circles -->
+  <g transform="translate(1150, 260)" opacity="0.2">
+    <circle cx="140" cy="140" r="140" fill="#2dd4bf"/>
+    <circle cx="240" cy="210" r="120" fill="#4ade80"/>
+    <circle cx="90" cy="240" r="100" fill="#f87171"/>
+  </g>
+</svg>

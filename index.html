@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfyaBora Kenya | HIV & AIDS Awareness, Prevention, Care & Interactive Learning</title>
+    <!-- Bootstrap 5.3 CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap Icons via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="100" tabindex="0">
+
+    <!-- Urgent 72-Hour PEP Top Alert Bar -->
+    <div class="pep-alert-bar text-white py-2">
+        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-2 text-center text-md-start">
+            <div class="small">
+                <span class="badge bg-white text-danger fw-bold me-2"><i class="bi bi-exclamation-triangle-fill"></i> URGENT</span>
+                Possible HIV exposure? Start <strong>Post-Exposure Prophylaxis (PEP)</strong> within <strong>72 hours</strong> (ideally within 24 hrs) at any Kenyan health facility.
+            </div>
+            <button type="button" class="btn btn-sm btn-light text-danger fw-bold rounded-pill px-3 flex-shrink-0" data-bs-toggle="modal" data-bs-target="#pepEmergencyModal">
+                Emergency PEP Guide <i class="bi bi-arrow-right-short"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Responsive Bootstrap 5 Sticky Navbar -->
+    <nav class="navbar navbar-expand-xl navbar-light bg-white sticky-top shadow-sm" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2 fw-extrabold" href="#home">
+                <span class="brand-cross d-inline-flex align-items-center justify-content-center rounded-3 text-white">
+                    <i class="bi bi-heart-pulse-fill"></i>
+                </span>
+                <span class="fs-4 text-dark">Afya<span class="text-teal">Bora</span></span>
+                <span class="badge kenya-pill">KENYA</span>
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-xl-0 align-items-xl-center gap-xl-1 fw-semibold small">
+                    <li class="nav-item"><a class="nav-link" href="#basics">HIV &amp; AIDS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#transmission">Transmission</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testing">Testing &amp; Estimator</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#treatment">ART &amp; U=U</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#prevention">Prevention</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#wellness">Living Well</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#myths">Myths vs Facts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kenya-services">Kenya Care</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#glossary">Glossary</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact &amp; Map</a></li>
+                    <li class="nav-item ms-xl-2 mt-2 mt-xl-0">
+                        <a class="btn btn-teal btn-sm rounded-pill px-3 fw-bold text-white" href="#knowledge-quest">
+                            <i class="bi bi-controller me-1"></i> Play Quiz Game
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Automatic Background Carousel -->
+    <section id="home" class="hero-section position-relative overflow-hidden">
+        <div id="afyaHeroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#afyaHeroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1: Kenyan Healthcare & Testing"></button>
+                <button type="button" data-bs-target="#afyaHeroCarousel" data-bs-slide-to="1" aria-label="Slide 2: Undetectable = Untransmittable"></button>
+                <button type="button" data-bs-target="#afyaHeroCarousel" data-bs-slide-to="2" aria-label="Slide 3: Stigma-Free Communities in Kenya"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active hero-slide" style="background-image: linear-gradient(105deg, rgba(15, 23, 42, 0.90) 0%, rgba(15, 118, 110, 0.78) 60%, rgba(15, 23, 42, 0.85) 100%), url('https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1600&q=80'), url('assets/images/hero-slide-1.svg');">
+                    <div class="container h-100 d-flex align-items-center py-5">
+                        <div class="row align-items-center g-4 w-100 py-3">
+                            <div class="col-lg-7 text-white">
+                                <span class="badge glass-badge rounded-pill px-3 py-2 mb-3">
+                                    <i class="bi bi-shield-check me-1"></i> Trusted HIV &amp; AIDS Education for Kenya
+                                </span>
+                                <h1 class="display-4 fw-extrabold mb-3">Knowledge, Dignity, and Health for Every Kenyan.</h1>
+                                <p class="lead text-light opacity-90 mb-4">
+                                    Accurate, stigma-free guidance on HIV testing, Antiretroviral Therapy (TLD), PrEP, emergency 72-hour PEP, and free Comprehensive Care Centres (CCCs) across Kenya.
+                                </p>
+                                <div class="d-flex flex-wrap gap-3 mb-4">
+                                    <a href="#kenya-services" class="btn btn-teal btn-lg fw-bold px-4 rounded-3 text-white shadow">
+                                        <i class="bi bi-hospital me-2"></i>Find Services in Kenya
+                                    </a>
+                                    <a href="#knowledge-quest" class="btn btn-outline-light btn-lg fw-bold px-4 rounded-3">
+                                        <i class="bi bi-controller me-2"></i>Take the Knowledge Quest
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="glass-card p-4 rounded-4 text-white">
+                                    <div class="d-flex align-items-center justify-content-between mb-3">
+                                        <h2 class="h5 fw-bold mb-0"><i class="bi bi-bookmark-star-fill text-warning me-2"></i>Quick Key Takeaways</h2>
+                                        <span class="badge bg-danger">NASCOP &amp; WHO</span>
+                                    </div>
+                                    <ul class="list-unstyled small mb-0 d-grid gap-2">
+                                        <li><i class="bi bi-check-circle-fill text-info me-2"></i><strong>HIV is treatable:</strong> Daily ART stops the virus and prevents AIDS.</li>
+                                        <li><i class="bi bi-check-circle-fill text-info me-2"></i><strong>U = U:</strong> Undetectable viral load = zero sexual transmission.</li>
+                                        <li><i class="bi bi-check-circle-fill text-info me-2"></i><strong>Emergency PEP:</strong> Start within <strong>72 hours</strong> of possible exposure.</li>
+                                        <li><i class="bi bi-check-circle-fill text-info me-2"></i><strong>Casual contact is safe:</strong> Hugging, sharing food, and mosquitoes do not spread HIV.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item hero-slide" style="background-image: linear-gradient(105deg, rgba(15, 23, 42, 0.90) 0%, rgba(21, 128, 61, 0.78) 60%, rgba(15, 23, 42, 0.86) 100%), url('https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=1600&q=80'), url('assets/images/hero-slide-2.svg');">
+                    <div class="container h-100 d-flex align-items-center py-5">
+                        <div class="row align-items-center g-4 w-100 py-3">
+                            <div class="col-lg-7 text-white">
+                                <span class="badge glass-badge rounded-pill px-3 py-2 mb-3">
+                                    <i class="bi bi-heart-fill text-danger me-1"></i> Science &amp; Hope
+                                </span>
+                                <h1 class="display-4 fw-extrabold mb-3">Undetectable = Untransmittable (U=U).</h1>
+                                <p class="lead text-light opacity-90 mb-4">
+                                    When a person living with HIV takes ART consistently and maintains an undetectable viral load, they live a full, healthy life and do not pass HIV to their sexual partners.
+                                </p>
+                                <div class="d-flex flex-wrap gap-3">
+                                    <a href="#treatment" class="btn btn-success btn-lg fw-bold px-4 rounded-3 shadow">
+                                        Explore ART &amp; U=U Science
+                                    </a>
+                                    <a href="#testing" class="btn btn-outline-light btn-lg fw-bold px-4 rounded-3">
+                                        Check Window Period Estimator
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="glass-card p-4 rounded-4 text-white">
+                                    <h2 class="h5 fw-bold mb-3"><i class="bi bi-capsule me-2 text-warning"></i>First-Line Care in Kenya</h2>
+                                    <p class="small mb-2">Kenya provides modern, effective first-line adult therapy known as <strong>TLD</strong>:</p>
+                                    <div class="d-flex flex-wrap gap-2 mb-3">
+                                        <span class="badge bg-light text-dark">Tenofovir (TDF)</span>
+                                        <span class="badge bg-light text-dark">Lamivudine (3TC)</span>
+                                        <span class="badge bg-light text-dark">Dolutegravir (DTG)</span>
+                                    </div>
+                                    <p class="small text-light opacity-75 mb-0">Available confidentially at Comprehensive Care Centres (CCCs) nationwide.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item hero-slide" style="background-image: linear-gradient(105deg, rgba(15, 23, 42, 0.90) 0%, rgba(185, 28, 28, 0.72) 60%, rgba(15, 23, 42, 0.88) 100%), url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1600&q=80'), url('assets/images/hero-slide-3.svg');">
+                    <div class="container h-100 d-flex align-items-center py-5">
+                        <div class="row align-items-center g-4 w-100 py-3">
+                            <div class="col-lg-7 text-white">
+                                <span class="badge glass-badge rounded-pill px-3 py-2 mb-3">
+                                    <i class="bi bi-people-fill me-1"></i> Healthy Families &amp; Zero Stigma
+                                </span>
+                                <h1 class="display-4 fw-extrabold mb-3">End HIV Stigma. Empower Every Community.</h1>
+                                <p class="lead text-light opacity-90 mb-4">
+                                    People living with HIV can marry, build thriving careers, and give birth to healthy, HIV-negative babies with proper PMTCT medical care and community support.
+                                </p>
+                                <div class="d-flex flex-wrap gap-3">
+                                    <a href="#wellness" class="btn btn-danger btn-lg fw-bold px-4 rounded-3 shadow">
+                                        PMTCT, Nutrition &amp; Support
+                                    </a>
+                                    <a href="#myths" class="btn btn-outline-light btn-lg fw-bold px-4 rounded-3">
+                                        Bust Common HIV Myths
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="glass-card p-4 rounded-4 text-white">
+                                    <h2 class="h5 fw-bold mb-3"><i class="bi bi-shield-plus me-2 text-info"></i>Prevention Options in Kenya</h2>
+                                    <ul class="list-unstyled small mb-0 d-grid gap-2">
+                                        <li><strong>PrEP:</strong> Daily oral pills or approved injectables before exposure.</li>
+                                        <li><strong>PEP:</strong> 28-day emergency medicine started within 72 hours.</li>
+                                        <li><strong>Condoms &amp; VMMC:</strong> Proven barrier and risk-reduction tools.</li>
+                                        <li><strong>PMTCT:</strong> Protects babies during pregnancy, birth &amp; breastfeeding.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#afyaHeroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous Slide</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#afyaHeroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next Slide</span>
+            </button>
+        </div>
+
+        <!-- Quick Stats Ribbon -->
+        <div class="stats-bar bg-dark text-white py-3 border-top border-secondary">
+            <div class="container">
+                <div class="row g-3 text-center">
+                    <div class="col-6 col-md-3">
+                        <div class="fw-extrabold fs-5 text-info">U = U</div>
+                        <div class="small text-light opacity-75">Undetectable = Untransmittable</div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="fw-extrabold fs-5 text-danger">72 Hours</div>
+                        <div class="small text-light opacity-75">Max Window to Start PEP</div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="fw-extrabold fs-5 text-success">TLD Regimen</div>
+                        <div class="small text-light opacity-75">1st-Line Adult ART in Kenya</div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="fw-extrabold fs-5 text-warning">12 Core Facts</div>
+                        <div class="small text-light opacity-75">
+                            <button class="btn btn-link btn-sm text-warning p-0 text-decoration-underline" data-bs-toggle="modal" data-bs-target="#twelveFactsModal">View All 12 Facts</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: Fundamentals (HIV, AIDS, Immune Cycle & Stages) -->
+    <section id="basics" class="py-5 bg-mint">
+        <div class="container py-3">
+            <div class="text-center max-w-750 mx-auto mb-5">
+                <span class="section-eyebrow">1. The Fundamentals</span>
+                <h2 class="fw-extrabold text-dark mt-1">Understanding HIV, AIDS &amp; the Immune System</h2>
+                <p class="text-muted">Learn the difference between HIV and AIDS, how the virus targets CD4 cells, and the three clinical stages of infection.</p>
+            </div>
+
+            <div class="row g-4 align-items-stretch mb-5">
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 border-top-teal">
+                        <div class="card-body p-4">
+                            <span class="badge bg-teal-soft text-teal fw-bold mb-2">THE VIRUS</span>
+                            <h3 class="h4 fw-bold text-dark">What is HIV?</h3>
+                            <p><strong>HIV (Human Immunodeficiency Virus)</strong> is a virus that attacks the body's immune system, particularly <strong>CD4 cells</strong> (T-helper cells), which help the body fight infections and diseases.</p>
+                            <p>If untreated, HIV gradually damages the immune system. With proper medical treatment (ART), a person can live with HIV for many healthy, productive years.</p>
+                            <div class="bg-light p-3 rounded-3 mt-3">
+                                <h4 class="h6 fw-bold text-dark mb-2">Two Main Types of HIV</h4>
+                                <ul class="small mb-0 ps-3">
+                                    <li><strong>HIV-1:</strong> The most common type worldwide; accounts for most infections.</li>
+                                    <li><strong>HIV-2:</strong> Less common and found mainly in West Africa, though it also occurs in other regions.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 border-top-red">
+                        <div class="card-body p-4">
+                            <span class="badge bg-danger-subtle text-danger fw-bold mb-2">ADVANCED STAGE</span>
+                            <h3 class="h4 fw-bold text-dark">What is AIDS?</h3>
+                            <p><strong>AIDS (Acquired Immunodeficiency Syndrome)</strong> is the most advanced stage of HIV infection. It occurs when HIV has severely weakened the immune system, making the body vulnerable to serious opportunistic infections and certain cancers.</p>
+                            <p class="alert alert-success py-2 px-3 small mb-3">
+                                <strong>Important:</strong> A person diagnosed with HIV does <em>not</em> automatically have AIDS. With effective ART, many people living with HIV never develop AIDS.
+                            </p>
+                            <div class="bg-light p-3 rounded-3">
+                                <h4 class="h6 fw-bold text-dark mb-2">Key Immune Indicators</h4>
+                                <ul class="small mb-0 ps-3">
+                                    <li><strong>CD4 Cells:</strong> White blood cells that coordinate immunity and indicate immune health.</li>
+                                    <li><strong>Viral Load:</strong> Amount of HIV in the blood (High, Low, or Undetectable).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HIV vs AIDS Comparison Table -->
+            <div class="card border-0 shadow-sm rounded-4 mb-5 overflow-hidden">
+                <div class="card-header bg-dark text-white py-3 px-4">
+                    <h3 class="h5 fw-bold mb-0"><i class="bi bi-columns-gap me-2 text-info"></i>Key Differences: HIV vs. AIDS</h3>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th class="ps-4">Aspect</th>
+                                <th>HIV (Human Immunodeficiency Virus)</th>
+                                <th class="pe-4">AIDS (Acquired Immunodeficiency Syndrome)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="ps-4 fw-bold">Definition</td>
+                                <td>A virus that attacks CD4 immune cells.</td>
+                                <td class="pe-4">The most advanced stage of HIV infection.</td>
+                            </tr>
+                            <tr>
+                                <td class="ps-4 fw-bold">Immune Impact</td>
+                                <td>Gradually damages immunity if untreated.</td>
+                                <td class="pe-4">Occurs when the immune system is severely damaged.</td>
+                            </tr>
+                            <tr>
+                                <td class="ps-4 fw-bold">Symptoms</td>
+                                <td>A person may have no symptoms for years.</td>
+                                <td class="pe-4">Often associated with serious opportunistic infections or cancers.</td>
+                            </tr>
+                            <tr>
+                                <td class="ps-4 fw-bold">Treatment</td>
+                                <td>Controlled effectively through daily ART.</td>
+                                <td class="pe-4">Can be treated, and associated illnesses can be managed.</td>
+                            </tr>
+                            <tr>
+                                <td class="ps-4 fw-bold">Outcome</td>
+                                <td>Does not always progress to AIDS.</td>
+                                <td class="pe-4">Results from untreated, advanced HIV infection.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 7-Step Immune Cycle -->
+            <div class="card border-0 shadow-sm rounded-4 p-4 mb-5">
+                <h3 class="h5 fw-bold text-dark mb-3"><i class="bi bi-arrow-repeat text-teal me-2"></i>How HIV Affects the Immune System (7-Step Process)</h3>
+                <div class="row g-2 row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-7">
+                    <div class="col"><div class="step-card p-3 rounded-3 h-100 bg-light border"><span class="badge bg-teal mb-2">Step 1</span><div class="small fw-semibold">HIV enters the body</div></div></div>
+                    <div class="col"><div class="step-card p-3 rounded-3 h-100 bg-light border"><span class="badge bg-teal mb-2">Step 2</span><div class="small fw-semibold">Attaches to CD4 cells</div></div></div>
+                    <div class="col"><div class="step-card p-3 rounded-3 h-100 bg-light border"><span class="badge bg-teal mb-2">Step 3</span><div class="small fw-semibold">Enters the CD4 cells</div></div></div>
+                    <div class="col"><div class="step-card p-3 rounded-3 h-100 bg-light border"><span class="badge bg-teal mb-2">Step 4</span><div class="small fw-semibold">Copies itself using the cell</div></div></div>
+                    <div class="col"><div class="step-card p-3 rounded-3 h-100 bg-light border"><span class="badge bg-teal mb-2">Step 5</span><div class="small fw-semibold">Infected cells damaged or die</div></div></div>
+                    <div class="col"><div class="step-card p-3 rounded-3 h-100 bg-light border"><span class="badge bg-teal mb-2">Step 6</span><div class="small fw-semibold">Healthy CD4 count decreases</div></div></div>
+                    <div class="col"><div class="step-card p-3 rounded-3 h-100 bg-light border"><span class="badge bg-danger mb-2">Step 7</span><div class="small fw-semibold">Body struggles to fight infections</div></div></div>
+                </div>
+            </div>
+
+            <!-- 3 Stages of HIV Infection (Bootstrap Pills) -->
+            <div class="card border-0 shadow-sm rounded-4 p-4">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2 mb-3">
+                    <div>
+                        <h3 class="h5 fw-bold text-dark mb-1">The 3 Stages &amp; Signs of HIV Infection</h3>
+                        <p class="small text-muted mb-0">Remember: You cannot tell if someone has HIV by appearance or symptoms alone—an HIV test is necessary.</p>
+                    </div>
+                </div>
+
+                <ul class="nav nav-pills mb-3 gap-2" id="stagesTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active fw-bold" id="stage1-tab" data-bs-toggle="pill" data-bs-target="#stage1-pane" type="button" role="tab">Stage 1: Acute (Early)</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fw-bold" id="stage2-tab" data-bs-toggle="pill" data-bs-target="#stage2-pane" type="button" role="tab">Stage 2: Chronic (Latency)</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fw-bold" id="stage3-tab" data-bs-toggle="pill" data-bs-target="#stage3-pane" type="button" role="tab">Stage 3: AIDS (Advanced)</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content bg-light p-4 rounded-3 border" id="stagesTabContent">
+                    <div class="tab-pane fade show active" id="stage1-pane" role="tabpanel">
+                        <h4 class="h6 fw-bold text-teal">Stage 1: Acute HIV Infection (Approx. 2–4 Weeks After Infection)</h4>
+                        <p class="small">High levels of HIV are present in the blood, creating a high risk of transmission as the immune system begins responding. Some people develop flu-like symptoms while others have none:</p>
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                            <span class="badge rounded-pill bg-danger-subtle text-danger px-3 py-2">Fever</span>
+                            <span class="badge rounded-pill bg-danger-subtle text-danger px-3 py-2">Headache</span>
+                            <span class="badge rounded-pill bg-danger-subtle text-danger px-3 py-2">Sore throat</span>
+                            <span class="badge rounded-pill bg-danger-subtle text-danger px-3 py-2">Skin rash</span>
+                            <span class="badge rounded-pill bg-danger-subtle text-danger px-3 py-2">Swollen lymph nodes</span>
+                            <span class="badge rounded-pill bg-danger-subtle text-danger px-3 py-2">Muscle &amp; joint pain</span>
+                            <span class="badge rounded-pill bg-danger-subtle text-danger px-3 py-2">Night sweats</span>
+                            <span class="badge rounded-pill bg-danger-subtle text-danger px-3 py-2">Fatigue</span>
+                            <span class="badge rounded-pill bg-danger-subtle text-danger px-3 py-2">Mouth ulcers</span>
+                        </div>
+                        <p class="small text-muted mb-0"><em>Note: These symptoms are not specific to HIV and can be caused by many other illnesses.</em></p>
+                    </div>
+
+                    <div class="tab-pane fade" id="stage2-pane" role="tabpanel">
+                        <h4 class="h6 fw-bold text-teal">Stage 2: Chronic HIV Infection (Clinical Latency)</h4>
+                        <ul class="small mb-0 d-grid gap-2">
+                            <li>The virus remains active in the body, reproducing usually at lower levels.</li>
+                            <li>The person may feel healthy and have <strong>no noticeable symptoms for years</strong>.</li>
+                            <li>Without treatment, the immune system gradually becomes weaker over time.</li>
+                            <li>With effective ART, people can live healthy lives for decades without progressing to AIDS.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-pane fade" id="stage3-pane" role="tabpanel">
+                        <h4 class="h6 fw-bold text-danger">Stage 3: AIDS (Advanced HIV Infection)</h4>
+                        <p class="small">Occurs when severe immune system damage leaves the body vulnerable to opportunistic infections and certain cancers. Requires prompt medical assessment and treatment:</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge rounded-pill bg-dark text-white px-3 py-2">Severe weight loss</span>
+                            <span class="badge rounded-pill bg-dark text-white px-3 py-2">Persistent fever</span>
+                            <span class="badge rounded-pill bg-dark text-white px-3 py-2">Chronic diarrhoea</span>
+                            <span class="badge rounded-pill bg-dark text-white px-3 py-2">Recurrent infections</span>
+                            <span class="badge rounded-pill bg-dark text-white px-3 py-2">Persistent swollen lymph nodes</span>
+                            <span class="badge rounded-pill bg-dark text-white px-3 py-2">Prolonged cough</span>
+                            <span class="badge rounded-pill bg-dark text-white px-3 py-2">Oral thrush</span>
+                            <span class="badge rounded-pill bg-dark text-white px-3 py-2">Severe fatigue</span>
+                            <span class="badge rounded-pill bg-dark text-white px-3 py-2">Tuberculosis (TB)</span>
+                            <span class="badge rounded-pill bg-dark text-white px-3 py-2">Certain cancers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Transmission vs Non-Transmission -->
+    <section id="transmission" class="py-5 bg-white">
+        <div class="container py-3">
+            <div class="text-center max-w-750 mx-auto mb-5">
+                <span class="section-eyebrow">2. Know the Facts</span>
+                <h2 class="fw-extrabold text-dark mt-1">How HIV Is—and Is NOT—Transmitted</h2>
+                <p class="text-muted">Clear scientific facts protect individuals and eliminate unfounded fear in homes, schools, and workplaces.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 border-top-amber">
+                        <div class="card-body p-4">
+                            <h3 class="h4 fw-bold text-dark mb-3"><i class="bi bi-exclamation-diamond-fill text-warning me-2"></i>How HIV IS Transmitted</h3>
+                            <p class="small">HIV spreads only when specific infected body fluids—<strong>blood, semen, pre-seminal fluid, vaginal fluids, rectal fluids, or breast milk</strong>—enter another person's bloodstream or contact mucous membranes or damaged tissue:</p>
+                            <div class="d-grid gap-3 mt-3">
+                                <div class="p-3 bg-light rounded-3">
+                                    <strong class="text-dark d-block">A. Sexual Transmission</strong>
+                                    <span class="small text-muted">Vaginal or anal sex without condoms, PrEP, or sustained viral suppression (U=U). Other STIs increase acquisition risk.</span>
+                                </div>
+                                <div class="p-3 bg-light rounded-3">
+                                    <strong class="text-dark d-block">B. Sharing Contaminated Needles</strong>
+                                    <span class="small text-muted">Sharing needles, syringes, or unsterilised injecting/cutting equipment exposed to infected blood.</span>
+                                </div>
+                                <div class="p-3 bg-light rounded-3">
+                                    <strong class="text-dark d-block">C. Mother-to-Child Transmission</strong>
+                                    <span class="small text-muted">During pregnancy, childbirth, or breastfeeding—greatly reduced with proper maternal ART and infant care.</span>
+                                </div>
+                                <div class="p-3 bg-light rounded-3">
+                                    <strong class="text-dark d-block">D. Contaminated Blood</strong>
+                                    <span class="small text-muted">Receiving infected blood products (very rare in Kenya's regulated, screened blood supply).</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 border-top-green">
+                        <div class="card-body p-4">
+                            <h3 class="h4 fw-bold text-dark mb-3"><i class="bi bi-shield-fill-check text-success me-2"></i>How HIV is NOT Transmitted</h3>
+                            <p class="small">HIV is <strong>never</strong> spread through ordinary everyday social interaction. You cannot get HIV from:</p>
+                            <div class="row g-2 mt-2">
+                                <div class="col-sm-6"><div class="safe-chip"><i class="bi bi-check-lg me-2"></i>Shaking hands</div></div>
+                                <div class="col-sm-6"><div class="safe-chip"><i class="bi bi-check-lg me-2"></i>Hugging</div></div>
+                                <div class="col-sm-6"><div class="safe-chip"><i class="bi bi-check-lg me-2"></i>Sharing food</div></div>
+                                <div class="col-sm-6"><div class="safe-chip"><i class="bi bi-check-lg me-2"></i>Sharing plates, cups or spoons</div></div>
+                                <div class="col-sm-6"><div class="safe-chip"><i class="bi bi-check-lg me-2"></i>Using the same toilet</div></div>
+                                <div class="col-sm-6"><div class="safe-chip"><i class="bi bi-check-lg me-2"></i>Sharing swimming pools</div></div>
+                                <div class="col-sm-6"><div class="safe-chip"><i class="bi bi-check-lg me-2"></i>Sitting next to someone</div></div>
+                                <div class="col-sm-6"><div class="safe-chip"><i class="bi bi-check-lg me-2"></i>Mosquito bites</div></div>
+                                <div class="col-sm-6"><div class="safe-chip"><i class="bi bi-check-lg me-2"></i>Sweat or tears</div></div>
+                                <div class="col-sm-6"><div class="safe-chip"><i class="bi bi-check-lg me-2"></i>Coughing or sneezing</div></div>
+                                <div class="col-sm-6"><div class="safe-chip"><i class="bi bi-check-lg me-2"></i>Working together</div></div>
+                                <div class="col-sm-6"><div class="safe-chip"><i class="bi bi-check-lg me-2"></i>Studying together</div></div>
+                            </div>
+                            <div class="mt-4 rounded-3 overflow-hidden border">
+                                <img src="assets/images/hiv-awareness-ribbon.svg" alt="Stand together against HIV stigma in Kenya" class="img-fluid w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Testing, Window Periods & Interactive Window Estimator -->
+    <section id="testing" class="py-5 bg-mint">
+        <div class="container py-3">
+            <div class="text-center max-w-750 mx-auto mb-5">
+                <span class="section-eyebrow">3. Knowing Your Status</span>
+                <h2 class="fw-extrabold text-dark mt-1">HIV Testing &amp; Window Period Estimator</h2>
+                <p class="text-muted">Only an HIV test can reliably determine your status. Understand test types, detection windows, and use our interactive estimator below.</p>
+            </div>
+
+            <div class="row g-3 mb-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-3">
+                        <h3 class="h6 fw-bold text-teal">A. Rapid HIV Test</h3>
+                        <p class="small text-muted mb-0">Uses a small finger-prick blood sample; results are available in minutes. Reactive results require confirmation under Kenya's approved testing algorithm.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-3">
+                        <h3 class="h6 fw-bold text-teal">B. Antibody Test</h3>
+                        <p class="small text-muted mb-0">Detects antibodies produced by the body's immune system in response to HIV infection.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-3">
+                        <h3 class="h6 fw-bold text-teal">C. Antigen/Antibody Test</h3>
+                        <p class="small text-muted mb-0">Detects both HIV antibodies and the <strong>p24 antigen</strong>, identifying infection earlier than antibody-only tests.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-3">
+                        <h3 class="h6 fw-bold text-teal">D. Nucleic Acid Test (NAT)</h3>
+                        <p class="small text-muted mb-0">Detects HIV genetic material directly in the blood. Identifies infection earliest of all test types.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 align-items-stretch">
+                <!-- Window Period Table -->
+                <div class="col-lg-7">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <div class="card-header bg-dark text-white py-3 px-4">
+                            <h3 class="h5 fw-bold mb-0">Typical HIV Window Periods by Test Type</h3>
+                        </div>
+                        <div class="card-body p-4">
+                            <p class="small text-muted">The <strong>window period</strong> is the time between acquiring HIV and when a test can reliably detect it. A negative result immediately after exposure may require retesting after the window period.</p>
+                            <div class="table-responsive">
+                                <table class="table table-bordered align-middle mb-0 small">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>Test Type</th>
+                                            <th>Typical Detection Window</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td class="fw-bold">Nucleic Acid Test (NAT)</td><td>10 – 33 days</td></tr>
+                                        <tr><td class="fw-bold">Laboratory Antigen/Antibody Test</td><td>18 – 45 days</td></tr>
+                                        <tr><td class="fw-bold">Rapid Finger-Prick Antigen/Antibody Test</td><td>18 – 90 days</td></tr>
+                                        <tr><td class="fw-bold">Antibody-Only Test</td><td>23 – 90 days</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Window Period & Retest Estimator -->
+                <div class="col-lg-5">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 border-top-teal">
+                        <div class="card-body p-4">
+                            <span class="badge bg-teal-soft text-teal fw-bold mb-2">INTERACTIVE TOOL</span>
+                            <h3 class="h5 fw-bold text-dark mb-2">Window Period &amp; Retest Estimator</h3>
+                            <p class="small text-muted">Select a test type and days since potential exposure to check detection timing.</p>
+
+                            <form id="windowEstimatorForm" class="d-grid gap-3">
+                                <div>
+                                    <label for="testTypeSelect" class="form-label small fw-bold">1. Select HIV Test Type</label>
+                                    <select id="testTypeSelect" class="form-select">
+                                        <option value="rapid_ag_ab">Rapid Finger-Prick Antigen/Antibody Test (18–90 days)</option>
+                                        <option value="lab_ag_ab">Laboratory Antigen/Antibody Test (18–45 days)</option>
+                                        <option value="antibody">Antibody-Only Test (23–90 days)</option>
+                                        <option value="nat">Nucleic Acid Test / NAT (10–33 days)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="daysSinceExposure" class="form-label small fw-bold">2. Days Since Potential Exposure</label>
+                                    <input type="number" id="daysSinceExposure" class="form-control" min="0" max="365" value="30" required>
+                                </div>
+                                <button type="submit" class="btn btn-teal text-white fw-bold">Check Detection Window</button>
+                            </form>
+
+                            <div id="estimatorResult" class="mt-3 p-3 rounded-3 bg-light border small" role="region" aria-live="polite">
+                                Enter days since exposure and click <strong>Check Detection Window</strong>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Treatment (ART) & U=U -->
+    <section id="treatment" class="py-5 bg-white">
+        <div class="container py-3">
+            <div class="text-center max-w-750 mx-auto mb-5">
+                <span class="section-eyebrow">4. Effective Treatment</span>
+                <h2 class="fw-extrabold text-dark mt-1">Antiretroviral Therapy (ART) &amp; U=U</h2>
+                <p class="text-muted">While there is currently no widely available cure, daily ART controls HIV, restores immunity, and prevents sexual transmission.</p>
+            </div>
+
+            <!-- U=U Hero Callout -->
+            <div class="uu-banner rounded-4 p-4 p-md-5 text-white shadow mb-5">
+                <div class="row align-items-center g-4">
+                    <div class="col-md-3 text-center">
+                        <div class="bg-white text-teal fw-extrabold display-5 py-3 px-4 rounded-4 shadow-sm d-inline-block">
+                            U = U
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <h3 class="h3 fw-extrabold mb-2">Undetectable = Untransmittable</h3>
+                        <p class="mb-2">A person living with HIV who takes effective treatment as prescribed and maintains an <strong>undetectable viral load</strong> does <strong>not</strong> transmit HIV to their sexual partners.</p>
+                        <div class="p-3 rounded-3 small bg-dark bg-opacity-25">
+                            <strong>Important:</strong> U=U requires consistent daily ART and regular viral load monitoring. U=U applies specifically to <strong>sexual transmission</strong>—it should not be taken as proof that HIV cannot be transmitted through sharing injecting equipment or breastfeeding without clinical guidance.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 align-items-stretch">
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <h3 class="h5 fw-bold text-dark mb-3">What Does ART Do?</h3>
+                        <ul class="list-unstyled d-grid gap-2 small mb-4">
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Reduces the amount of HIV (viral load) in the blood.</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Helps the immune system and CD4 cells recover.</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Reduces the risk of opportunistic infections.</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Helps prevent progression to AIDS.</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Helps people living with HIV live longer, healthier lives.</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Prevents sexual transmission when viral suppression is maintained.</li>
+                        </ul>
+
+                        <div class="p-3 rounded-3 bg-teal-soft border-start border-4 border-teal">
+                            <h4 class="h6 fw-bold text-teal mb-1">Common First-Line Adult Treatment in Kenya: TLD</h4>
+                            <p class="small text-dark mb-0">
+                                Kenya's standard first-line adult combination is <strong>TDF + 3TC + DTG (TLD)</strong>—combining <em>Tenofovir</em>, <em>Lamivudine</em>, and <em>Dolutegravir</em>. Exact regimens are selected by qualified clinicians under NASCOP guidelines. Never stop or change dosage without medical advice.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <div class="card-header bg-dark text-white py-3 px-4">
+                            <h3 class="h5 fw-bold mb-0">Common Antiretroviral (ARV) Medicines</h3>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-striped align-middle mb-0 small">
+                                <thead>
+                                    <tr>
+                                        <th class="ps-4">Medicine</th>
+                                        <th class="pe-4">Function</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="ps-4 fw-bold">Tenofovir (TDF)</td><td class="pe-4">Prevents HIV from making genetic copies.</td></tr>
+                                    <tr><td class="ps-4 fw-bold">Lamivudine (3TC)</td><td class="pe-4">Interferes with viral replication.</td></tr>
+                                    <tr><td class="ps-4 fw-bold">Dolutegravir (DTG)</td><td class="pe-4">Blocks an enzyme HIV needs to reproduce.</td></tr>
+                                    <tr><td class="ps-4 fw-bold">Efavirenz (EFV)</td><td class="pe-4">Interferes with HIV replication.</td></tr>
+                                    <tr><td class="ps-4 fw-bold">Abacavir (ABC)</td><td class="pe-4">Interferes with viral genetic copying.</td></tr>
+                                    <tr><td class="ps-4 fw-bold">Zidovudine (AZT)</td><td class="pe-4">Prevents HIV from reproducing effectively.</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Prevention Toolkit (PEP, PrEP, Condoms, VMMC, PMTCT) -->
+    <section id="prevention" class="py-5 bg-mint">
+        <div class="container py-3">
+            <div class="text-center max-w-750 mx-auto mb-5">
+                <span class="section-eyebrow">5. Stay Protected</span>
+                <h2 class="fw-extrabold text-dark mt-1">Comprehensive HIV Prevention</h2>
+                <p class="text-muted">Combine proven medical and behavioural tools to protect yourself and your partners.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 border-top-red">
+                        <div class="card-body p-4">
+                            <span class="badge bg-danger text-white mb-2">ACT WITHIN 72 HOURS</span>
+                            <h3 class="h5 fw-bold text-dark">Post-Exposure Prophylaxis (PEP)</h3>
+                            <p class="small">Emergency medication taken by HIV-negative people <strong>after</strong> possible exposure (condom breakage, sexual assault, needle-stick injury, or sharing needles).</p>
+                            <ul class="small ps-3 mb-0 d-grid gap-1">
+                                <li>Start as soon as possible—<strong>ideally within 24 hours and no later than 72 hours</strong>.</li>
+                                <li>Taken daily for <strong>28 days</strong>.</li>
+                                <li>Do not wait for symptoms—go to a Kenyan hospital or health facility immediately.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 border-top-teal">
+                        <div class="card-body p-4">
+                            <span class="badge bg-teal text-white mb-2">BEFORE EXPOSURE</span>
+                            <h3 class="h5 fw-bold text-dark">Pre-Exposure Prophylaxis (PrEP)</h3>
+                            <p class="small">Preventive medication taken by HIV-negative people at substantial risk of acquiring HIV <strong>before</strong> exposure.</p>
+                            <ul class="small ps-3 mb-0 d-grid gap-1">
+                                <li>Available as daily oral PrEP, long-acting injectable PrEP, or other approved formulations under Kenyan guidelines.</li>
+                                <li>Requires an HIV-negative test and medical assessment before starting.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 border-top-green">
+                        <div class="card-body p-4">
+                            <span class="badge bg-success text-white mb-2">PROVEN METHODS</span>
+                            <h3 class="h5 fw-bold text-dark">Condoms, VMMC, Sterile Needles &amp; PMTCT</h3>
+                            <ul class="small ps-3 mb-0 d-grid gap-2">
+                                <li><strong>Condoms:</strong> Correct, consistent male or female condom use prevents HIV, STIs, and unintended pregnancy.</li>
+                                <li><strong>Regular HIV Testing:</strong> Know your status early.</li>
+                                <li><strong>Sterile Needles:</strong> Never share needles or unsterilised equipment.</li>
+                                <li><strong>Medical Male Circumcision (VMMC):</strong> Reduces heterosexual HIV acquisition risk in men (partial protection; pair with condoms).</li>
+                                <li><strong>PMTCT:</strong> Maternal ART and infant prophylaxis protect babies from mother-to-child transmission.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Living Well (Pregnancy, Nutrition, Opportunistic Infections, Mental Health & Stigma) -->
+    <section id="wellness" class="py-5 bg-white">
+        <div class="container py-3">
+            <div class="text-center max-w-750 mx-auto mb-5">
+                <span class="section-eyebrow">6. Holistic Health &amp; Dignity</span>
+                <h2 class="fw-extrabold text-dark mt-1">Living Well with HIV: Family, Nutrition, Mental Health &amp; Rights</h2>
+                <p class="text-muted">People living with HIV can build families, eat nourishing local foods, prevent complications, and thrive free from discrimination.</p>
+            </div>
+
+            <div class="row g-4 mb-4">
+                <!-- Pregnancy, Breastfeeding & Relationships -->
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <img src="assets/images/kenya-community.svg" alt="Healthy relationships, families, and zero stigma in Kenya" class="card-img-top">
+                        <div class="card-body p-4">
+                            <h3 class="h5 fw-bold text-dark">Relationships, Pregnancy &amp; Breastfeeding</h3>
+                            <p class="small"><strong>Serodifferent (Serodiscordant) Couples:</strong> Couples where one partner has HIV and the other does not can enjoy healthy marriages and relationships using ART (U=U), PrEP for the HIV-negative partner, condoms, and open communication.</p>
+                            <p class="small mb-2"><strong>Pregnancy &amp; Breastfeeding Care in Kenya:</strong></p>
+                            <ol class="small ps-3 mb-0 d-grid gap-1">
+                                <li>Early antenatal HIV testing and regular clinic visits.</li>
+                                <li>Starting or continuing ART and monitoring maternal viral load.</li>
+                                <li>Following medical advice during childbirth and infant prophylaxis/testing.</li>
+                                <li>Following qualified Kenyan provider guidance on breastfeeding and infant feeding—never make independent feeding or medication changes without clinical advice.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kenyan Nutrition -->
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <img src="assets/images/kenya-nutrition.svg" alt="Balanced Kenyan nutrition with sukuma wiki, beans, fruits, and safe water" class="card-img-top">
+                        <div class="card-body p-4">
+                            <h3 class="h5 fw-bold text-dark">Nutrition &amp; Food Hygiene</h3>
+                            <p class="small">Good nutrition supports strength and immunity alongside ART (supplements never replace prescribed ARVs):</p>
+                            <ul class="small ps-3 mb-2 d-grid gap-1">
+                                <li><strong>Fruits &amp; Vegetables:</strong> Bananas, oranges, mangoes, avocados, spinach, <em>sukuma wiki</em>, carrots, and cabbage.</li>
+                                <li><strong>Proteins &amp; Dairy:</strong> Eggs, beans, fish, chicken, lentils, milk, and yoghurt.</li>
+                                <li><strong>Carbohydrates &amp; Healthy Fats:</strong> Rice, potatoes, maize, sweet potatoes, nuts, and seeds.</li>
+                            </ul>
+                            <p class="small text-muted mb-0"><strong>Food Safety:</strong> Drink clean safe water, wash produce thoroughly, cook food well, and consult a clinician for weight loss or persistent diarrhoea.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion for Opportunistic Infections, Complications, Mental Health & Stigma -->
+            <div class="accordion shadow-sm rounded-4 overflow-hidden" id="wellnessAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOI" aria-expanded="true">
+                            <i class="bi bi-activity text-danger me-2"></i> Opportunistic Infections &amp; HIV-Related Complications
+                        </button>
+                    </h2>
+                    <div id="collapseOI" class="accordion-collapse collapse show" data-bs-parent="#wellnessAccordion">
+                        <div class="accordion-body small">
+                            <p>When immunity is weakened without treatment, people may develop <strong>opportunistic infections</strong>—such as <em>Tuberculosis (TB), oral thrush, pneumonia, cryptococcal meningitis, herpes zoster (shingles), toxoplasmosis, Kaposi's sarcoma,</em> and <em>chronic diarrhoeal infections</em>—as well as neurological, kidney, liver (especially with Hepatitis B/C), lymphoma, or cardiovascular complications. Effective ART and routine monitoring prevent most of these risks.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMental">
+                            <i class="bi bi-emoji-smile text-teal me-2"></i> Mental Health, Emotional Support &amp; Ending Stigma
+                        </button>
+                    </h2>
+                    <div id="collapseMental" class="accordion-collapse collapse" data-bs-parent="#wellnessAccordion">
+                        <div class="accordion-body small">
+                            <p class="mb-2"><strong>Emotional Wellbeing:</strong> Depression, anxiety, stress, and fear of rejection can affect people living with HIV. Confidential counselling, peer support groups, self-acceptance, and family support promote resilience and treatment adherence.</p>
+                            <p class="mb-0"><strong>Fighting Stigma &amp; Discrimination:</strong> Denying someone employment, education, social inclusion, or breaching medical confidentiality is unfair and harmful. HIV is a manageable medical condition—every person deserves dignity, respect, privacy, and equal opportunities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Interactive Educational Mini-Game ("AfyaBora HIV Knowledge Quest") -->
+    <section id="knowledge-quest" class="py-5 quest-section text-white">
+        <div class="container py-3">
+            <div class="text-center max-w-750 mx-auto mb-4">
+                <span class="badge bg-warning text-dark fw-extrabold px-3 py-2 rounded-pill mb-2">
+                    <i class="bi bi-controller me-1"></i> INTERACTIVE EDUCATIONAL GAME
+                </span>
+                <h2 class="fw-extrabold">AfyaBora HIV Knowledge Quest</h2>
+                <p class="text-light opacity-90">Test your knowledge across 10 real-life Kenyan scenarios and Myth vs. Fact challenges. Build a streak and earn your AfyaBora Health Champion certificate!</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="card border-0 shadow-lg rounded-4 text-dark overflow-hidden" id="gameCard">
+                        <!-- Game Top HUD -->
+                        <div class="card-header bg-dark text-white py-3 px-4">
+                            <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+                                <div class="d-flex align-items-center gap-3">
+                                    <span class="fw-bold"><i class="bi bi-trophy-fill text-warning me-1"></i> Score: <span id="gameScore">0</span></span>
+                                    <span class="badge bg-teal">Streak: <span id="gameStreak">0</span>x</span>
+                                </div>
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="form-check form-switch mb-0 small">
+                                        <input class="form-check-input" type="checkbox" id="timerToggle" checked>
+                                        <label class="form-check-label" for="timerToggle">20s Timer</label>
+                                    </div>
+                                    <span class="badge bg-danger fs-6" id="gameTimerBadge"><i class="bi bi-stopwatch me-1"></i><span id="gameTimer">20</span>s</span>
+                                </div>
+                            </div>
+                            <div class="progress mt-3" style="height: 8px;">
+                                <div id="gameProgressBar" class="progress-bar bg-success" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <!-- Start Screen -->
+                        <div class="card-body p-4 p-md-5 text-center" id="gameStartScreen">
+                            <div class="display-4 text-teal mb-3"><i class="bi bi-patch-check-fill"></i></div>
+                            <h3 class="h4 fw-extrabold text-dark mb-2">Ready to Become an AfyaBora Health Champion?</h3>
+                            <p class="text-muted mb-4">You will face 10 randomized questions covering <strong>U=U</strong>, the <strong>72-hour PEP rule</strong>, <strong>window periods</strong>, <strong>PMTCT</strong>, and <strong>casual contact myths</strong>.</p>
+                            <button type="button" id="startGameBtn" class="btn btn-teal btn-lg text-white fw-bold px-5 rounded-pill shadow">
+                                Start Knowledge Quest <i class="bi bi-play-fill ms-1"></i>
+                            </button>
+                        </div>
+
+                        <!-- Active Question Screen -->
+                        <div class="card-body p-4 p-md-5 d-none" id="gamePlayScreen">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-teal-soft text-teal fw-bold" id="questionCategory">SCENARIO CHALLENGE</span>
+                                <span class="small fw-bold text-muted" id="questionCounter">Question 1 of 10</span>
+                            </div>
+                            <h3 class="h5 fw-bold text-dark mb-4" id="questionText">Loading question...</h3>
+
+                            <div class="d-grid gap-2 mb-4" id="optionsContainer"></div>
+
+                            <!-- Instant Explanation Box -->
+                            <div id="feedbackBox" class="alert d-none mb-3" role="alert">
+                                <div class="fw-bold mb-1" id="feedbackTitle"></div>
+                                <div class="small" id="feedbackExplanation"></div>
+                            </div>
+
+                            <div class="text-end">
+                                <button type="button" id="nextQuestionBtn" class="btn btn-dark fw-bold px-4 rounded-pill d-none">
+                                    Next Question <i class="bi bi-arrow-right ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Final Certificate / Results Screen -->
+                        <div class="card-body p-4 p-md-5 text-center d-none" id="gameEndScreen">
+                            <div class="champion-certificate p-4 rounded-4 border border-2 border-success bg-mint mb-4">
+                                <span class="badge bg-success mb-2 px-3 py-2">OFFICIAL AWARENESS BADGE</span>
+                                <div class="display-4 text-warning my-2"><i class="bi bi-award-fill"></i></div>
+                                <h3 class="h4 fw-extrabold text-dark" id="championRankTitle">AfyaBora Health Champion</h3>
+                                <p class="small text-muted mb-3">Awarded for completing the AfyaBora Kenya HIV &amp; AIDS Awareness Challenge</p>
+                                <div class="d-flex justify-content-center gap-4 mb-2">
+                                    <div>
+                                        <div class="fs-3 fw-extrabold text-teal" id="finalScoreDisplay">0</div>
+                                        <div class="small text-muted">Total Points</div>
+                                    </div>
+                                    <div>
+                                        <div class="fs-3 fw-extrabold text-success" id="finalAccuracyDisplay">0/10</div>
+                                        <div class="small text-muted">Correct Answers</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-wrap justify-content-center gap-3">
+                                <button type="button" id="playAgainBtn" class="btn btn-teal text-white fw-bold px-4 rounded-pill">
+                                    <i class="bi bi-arrow-clockwise me-1"></i> Play Again
+                                </button>
+                                <button type="button" id="shareScoreBtn" class="btn btn-outline-dark fw-bold px-4 rounded-pill">
+                                    <i class="bi bi-share-fill me-1"></i> Copy &amp; Share Score
+                                </button>
+                            </div>
+                            <p id="shareStatusMsg" class="small text-success fw-bold mt-2 mb-0"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 8: Interactive Myths vs Facts Flip/Reveal Cards -->
+    <section id="myths" class="py-5 bg-mint">
+        <div class="container py-3">
+            <div class="text-center max-w-750 mx-auto mb-5">
+                <span class="section-eyebrow">7. Fact Check</span>
+                <h2 class="fw-extrabold text-dark mt-1">Common Myths vs. Facts About HIV</h2>
+                <p class="text-muted">Tap or click any card below to flip between the myth and the verified medical fact.</p>
+            </div>
+
+            <div class="row g-3" id="mythsContainer"></div>
+        </div>
+    </section>
+
+    <!-- Section 9: HIV Services & Support in Kenya -->
+    <section id="kenya-services" class="py-5 bg-white">
+        <div class="container py-3">
+            <div class="text-center max-w-750 mx-auto mb-5">
+                <span class="section-eyebrow">8. Care Across Kenya</span>
+                <h2 class="fw-extrabold text-dark mt-1">HIV Services &amp; Support in Kenya</h2>
+                <p class="text-muted">Confidential testing, ART, PrEP, PEP, and psychosocial support are accessible nationwide.</p>
+            </div>
+
+            <div class="row g-4 align-items-stretch">
+                <div class="col-lg-5">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <img src="assets/images/kenya-healthcare.svg" alt="Kenyan healthcare worker providing confidential HIV testing and care" class="card-img-top">
+                        <div class="card-body p-4">
+                            <h3 class="h5 fw-bold text-dark mb-3">Where to Access Services</h3>
+                            <ul class="small ps-3 mb-3 d-grid gap-1">
+                                <li><strong>Comprehensive Care Centres (CCCs)</strong></li>
+                                <li>National &amp; County Referral Hospitals</li>
+                                <li>Sub-County Hospitals, Health Centres &amp; Dispensaries</li>
+                                <li>Approved Community-Based HIV &amp; PLHIV Support Programmes</li>
+                            </ul>
+                            <div class="p-3 bg-light rounded-3 small">
+                                <strong class="d-block text-dark mb-1">Official Kenyan &amp; Global Resources:</strong>
+                                <span>NASCOP (refer to the <em>2026 Integrated Guidelines</em>), NSDCC/NACC, Ministry of Health Kenya, and WHO.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <div class="card-header bg-teal text-white py-3 px-4">
+                            <h3 class="h5 fw-bold mb-0">Available Services at Kenyan Health Facilities</h3>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle mb-0 small">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th class="ps-4">Service</th>
+                                        <th class="pe-4">Purpose</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="ps-4 fw-bold">HIV Testing &amp; Counselling</td><td class="pe-4">Determines HIV status confidentially and provides emotional &amp; medical guidance.</td></tr>
+                                    <tr><td class="ps-4 fw-bold">ART Services</td><td class="pe-4">Provides antiretroviral treatment and viral load / CD4 monitoring.</td></tr>
+                                    <tr><td class="ps-4 fw-bold">PrEP</td><td class="pe-4">Prevents HIV infection before possible exposure.</td></tr>
+                                    <tr><td class="ps-4 fw-bold">PEP</td><td class="pe-4">Emergency prevention started within 72 hours after possible exposure.</td></tr>
+                                    <tr><td class="ps-4 fw-bold">PMTCT</td><td class="pe-4">Prevents mother-to-child transmission during pregnancy, birth &amp; breastfeeding.</td></tr>
+                                    <tr><td class="ps-4 fw-bold">TB Screening</td><td class="pe-4">Identifies and treats tuberculosis among people living with HIV.</td></tr>
+                                    <tr><td class="ps-4 fw-bold">Nutritional &amp; Psychosocial Support</td><td class="pe-4">Promotes healthy nutrition, mental wellbeing, and peer support groups.</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 10: Searchable HIV Glossary -->
+    <section id="glossary" class="py-5 bg-mint">
+        <div class="container py-3">
+            <div class="text-center max-w-750 mx-auto mb-4">
+                <span class="section-eyebrow">9. Quick Reference</span>
+                <h2 class="fw-extrabold text-dark mt-1">Important HIV Terms &amp; Meanings</h2>
+                <p class="text-muted">Search key medical terms used in HIV prevention and treatment in Kenya.</p>
+            </div>
+
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-7 col-lg-6">
+                    <div class="input-group input-group-lg shadow-sm">
+                        <span class="input-group-text bg-white border-end-0 text-teal"><i class="bi bi-search"></i></span>
+                        <input type="text" id="glossarySearchInput" class="form-control border-start-0" placeholder="Search term (e.g., CCC, TLD, U=U, CD4, PrEP, Window)..." aria-label="Search HIV glossary">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-3" id="glossaryGrid"></div>
+            <p id="glossaryEmptyState" class="text-center text-muted fw-bold mt-3 d-none">No matching terms found. Try another keyword.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4 pb-4 border-bottom border-secondary">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="brand-cross d-inline-flex align-items-center justify-content-center rounded-3 text-white">
+                            <i class="bi bi-heart-pulse-fill"></i>
+                        </span>
+                        <span class="fs-4 fw-extrabold text-white">Afya<span class="text-info">Bora</span></span>
+                        <span class="badge bg-success">KENYA</span>
+                    </div>
+                    <p class="small text-secondary mb-3">Empowering Kenyans with clear, accurate, stigma-free HIV &amp; AIDS education, prevention tools, and links to care.</p>
+                    <div class="d-flex align-items-center gap-2 social-links" aria-label="AfyaBora Kenya Social Media">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook" title="Follow AfyaBora Kenya on Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="X (Twitter)" title="Follow AfyaBora Kenya on X">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram" title="Follow AfyaBora Kenya on Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="YouTube" title="Watch AfyaBora Kenya on YouTube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/254719000000" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="WhatsApp Helpline" title="Chat on WhatsApp">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <h4 class="h6 fw-bold text-white mb-3">Explore Sections</h4>
+                    <ul class="list-unstyled small d-grid gap-2">
+                        <li><a href="#basics" class="text-secondary text-decoration-none">HIV vs. AIDS</a></li>
+                        <li><a href="#testing" class="text-secondary text-decoration-none">Testing &amp; Window Estimator</a></li>
+                        <li><a href="#treatment" class="text-secondary text-decoration-none">ART (TLD) &amp; U=U</a></li>
+                        <li><a href="#knowledge-quest" class="text-secondary text-decoration-none">HIV Knowledge Quest Game</a></li>
+                        <li><a href="contact.html" class="text-info text-decoration-none fw-semibold"><i class="bi bi-geo-alt-fill me-1"></i>Contact &amp; Kenya Care Map</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-5">
+                    <h4 class="h6 fw-bold text-white mb-3">Medical Disclaimer</h4>
+                    <p class="small text-secondary mb-0">
+                        AfyaBora provides public health education and does not replace professional medical diagnosis or clinical care. Always consult a qualified healthcare provider or visit a Kenyan Comprehensive Care Centre (CCC) for testing, ART, PrEP, or emergency PEP.
+                    </p>
+                </div>
+            </div>
+            <div class="text-center small text-secondary pt-3">
+                &copy; 2026 AfyaBora Kenya. Aligned with NASCOP &amp; WHO Public Health Guidance.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal 1: Emergency PEP Guide -->
+    <div class="modal fade" id="pepEmergencyModal" tabindex="-1" aria-labelledby="pepEmergencyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 border-0 shadow">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title fw-bold" id="pepEmergencyModalLabel"><i class="bi bi-exclamation-octagon-fill me-2"></i>Emergency PEP (Within 72 Hours)</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 small">
+                    <p class="fw-bold text-dark">If you think you may have been exposed to HIV (condom breakage, sexual assault, needle-stick injury, or sharing needles):</p>
+                    <ol class="d-grid gap-2 ps-3 mb-3">
+                        <li><strong>Go to a Kenyan hospital, health centre, or CCC immediately</strong>—ideally within <strong>24 hours</strong> and no later than <strong>72 hours</strong>.</li>
+                        <li>Do <strong>not</strong> wait for symptoms to appear.</li>
+                        <li>A healthcare provider will perform a rapid HIV test and prescribe a <strong>28-day course of PEP</strong> if eligible.</li>
+                        <li>Take all 28 days of medication exactly as prescribed and attend follow-up testing.</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm rounded-pill px-3" data-bs-dismiss="modal">Close</button>
+                    <a href="#kenya-services" class="btn btn-danger btn-sm rounded-pill px-3 fw-bold" data-bs-dismiss="modal">View Kenyan Care Facilities</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: 12 Important Facts Everyone Should Remember -->
+    <div class="modal fade" id="twelveFactsModal" tabindex="-1" aria-labelledby="twelveFactsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content rounded-4 border-0 shadow">
+                <div class="modal-header bg-teal text-white">
+                    <h5 class="modal-title fw-bold" id="twelveFactsModalLabel">12 Important Facts Everyone Should Remember About HIV</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 small">
+                    <ol class="d-grid gap-2 ps-3 mb-0">
+                        <li>HIV attacks the immune system, particularly CD4 cells.</li>
+                        <li>AIDS is the most advanced stage of HIV infection.</li>
+                        <li>HIV is transmitted through specific infected body fluids.</li>
+                        <li>HIV cannot be transmitted through ordinary social contact.</li>
+                        <li>HIV testing is the only reliable way to know someone's HIV status.</li>
+                        <li>There is effective treatment for HIV.</li>
+                        <li>ART helps people living with HIV live long and healthy lives.</li>
+                        <li>People who maintain an undetectable viral load do not transmit HIV sexually (U=U).</li>
+                        <li>PrEP helps prevent HIV before possible exposure.</li>
+                        <li>PEP helps prevent HIV after possible exposure and must be started within 72 hours.</li>
+                        <li>Pregnant women living with HIV can have HIV-negative babies with appropriate treatment and care.</li>
+                        <li>People living with HIV deserve love, respect, privacy and equal treatment.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5.3 JS Bundle via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Custom App Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>

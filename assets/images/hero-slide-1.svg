@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b"/>
+      <stop offset="50%" stop-color="#0f766e"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="75%" cy="35%" r="50%">
+      <stop offset="0%" stop-color="#14b8a6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#0f766e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg1)"/>
+  <rect width="1600" height="900" fill="url(#glow1)"/>
+  <!-- Subtle Kenyan Shield & Medical Cross Motif -->
+  <g transform="translate(1080, 180)" opacity="0.22">
+    <ellipse cx="180" cy="260" rx="135" ry="240" fill="none" stroke="#ffffff" stroke-width="10"/>
+    <ellipse cx="180" cy="260" rx="95" ry="190" fill="none" stroke="#ccfbf1" stroke-width="5"/>
+    <rect x="155" y="185" width="50" height="150" rx="10" fill="#dc2626"/>
+    <rect x="105" y="235" width="150" height="50" rx="10" fill="#dc2626"/>
+  </g>
+  <!-- Decorative Waves -->
+  <path d="M0,760 C400,680 800,840 1600,720 L1600,900 L0,900 Z" fill="#042f2e" opacity="0.5"/>
+  <path d="M0,810 C500,740 1100,870 1600,790 L1600,900 L0,900 Z" fill="#15803d" opacity="0.3"/>
+</svg>

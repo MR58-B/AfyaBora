@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact &amp; Kenya Care Map | AfyaBora Kenya</title>
+    <!-- Bootstrap 5.3 CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap Icons via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Leaflet CSS for Interactive Kenya Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Urgent 72-Hour PEP Top Alert Bar -->
+    <div class="pep-alert-bar text-white py-2">
+        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-2 text-center text-md-start">
+            <div class="small">
+                <span class="badge bg-white text-danger fw-bold me-2"><i class="bi bi-exclamation-triangle-fill"></i> URGENT</span>
+                Possible HIV exposure? Start <strong>Post-Exposure Prophylaxis (PEP)</strong> within <strong>72 hours</strong> (ideally within 24 hrs) at any Kenyan health facility.
+            </div>
+            <button type="button" class="btn btn-sm btn-light text-danger fw-bold rounded-pill px-3 flex-shrink-0" data-bs-toggle="modal" data-bs-target="#pepEmergencyModal">
+                Emergency PEP Guide <i class="bi bi-arrow-right-short"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Responsive Bootstrap 5 Sticky Navbar -->
+    <nav class="navbar navbar-expand-xl navbar-light bg-white sticky-top shadow-sm" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2 fw-extrabold" href="index.html#home">
+                <span class="brand-cross d-inline-flex align-items-center justify-content-center rounded-3 text-white">
+                    <i class="bi bi-heart-pulse-fill"></i>
+                </span>
+                <span class="fs-4 text-dark">Afya<span class="text-teal">Bora</span></span>
+                <span class="badge kenya-pill">KENYA</span>
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-xl-0 align-items-xl-center gap-xl-1 fw-semibold small">
+                    <li class="nav-item"><a class="nav-link" href="index.html#basics">HIV &amp; AIDS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#transmission">Transmission</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#testing">Testing &amp; Estimator</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#treatment">ART &amp; U=U</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#prevention">Prevention</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#wellness">Living Well</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#myths">Myths vs Facts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#kenya-services">Kenya Care</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#glossary">Glossary</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact &amp; Map</a></li>
+                    <li class="nav-item ms-xl-2 mt-2 mt-xl-0">
+                        <a class="btn btn-teal btn-sm rounded-pill px-3 fw-bold text-white" href="index.html#knowledge-quest">
+                            <i class="bi bi-controller me-1"></i> Play Quiz Game
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Header -->
+    <header class="contact-hero text-white py-5">
+        <div class="container py-3">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-8">
+                    <span class="badge glass-badge rounded-pill px-3 py-2 mb-3">
+                        <i class="bi bi-geo-alt-fill me-1"></i> Nationwide Support &amp; Facility Locator
+                    </span>
+                    <h1 class="display-5 fw-extrabold mb-3">Contact AfyaBora Kenya &amp; Find Care Near You</h1>
+                    <p class="lead text-white-50 mb-4">
+                        Connect confidentially with our support desk, explore Comprehensive Care Centres (CCCs) across Kenya on our interactive map, or reach us on social media.
+                    </p>
+                    <div class="d-flex flex-wrap align-items-center gap-3">
+                        <a href="tel:1190" class="btn btn-light text-teal fw-bold rounded-pill px-4">
+                            <i class="bi bi-telephone-fill me-2"></i>National HIV Helpline: 1190
+                        </a>
+                        <div class="d-flex align-items-center gap-2 social-links" aria-label="AfyaBora Kenya Social Media">
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook" title="Facebook">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="X (Twitter)" title="X (Twitter)">
+                                <i class="bi bi-twitter-x"></i>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram" title="Instagram">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="YouTube" title="YouTube">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                            <a href="https://wa.me/254719000000" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="WhatsApp" title="WhatsApp">
+                                <i class="bi bi-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="glass-card rounded-4 p-4">
+                        <h2 class="h5 fw-bold mb-3"><i class="bi bi-headset me-2 text-info"></i>24/7 Confidential Helplines</h2>
+                        <ul class="list-unstyled small d-grid gap-2 mb-0">
+                            <li class="d-flex justify-content-between border-bottom border-secondary pb-2">
+                                <span>One2One Youth &amp; HIV Hotline:</span>
+                                <strong class="text-info">1190 (Toll-Free)</strong>
+                            </li>
+                            <li class="d-flex justify-content-between border-bottom border-secondary pb-2">
+                                <span>National GBV &amp; PEP Support:</span>
+                                <strong class="text-info">1195 (Toll-Free)</strong>
+                            </li>
+                            <li class="d-flex justify-content-between border-bottom border-secondary pb-2">
+                                <span>AfyaBora Desk (Nairobi):</span>
+                                <strong>+254 719 000 000</strong>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <span>Email Support:</span>
+                                <strong>care@afyabora.or.ke</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Interactive Kenya Care Map Section -->
+    <section id="kenya-map-section" class="py-5 bg-mint">
+        <div class="container py-2">
+            <div class="d-flex flex-column flex-lg-row align-items-lg-end justify-content-between gap-3 mb-4">
+                <div>
+                    <span class="section-eyebrow">Interactive Kenya Map</span>
+                    <h2 class="fw-extrabold text-dark mt-1 mb-1">Kenyan Comprehensive Care Centres (CCCs) &amp; Referral Hubs</h2>
+                    <p class="text-muted mb-0">Filter by region or click any facility below to zoom in on the Kenya map and view available HIV testing, ART, PrEP, and PEP services.</p>
+                </div>
+                <div class="d-flex flex-wrap gap-2" id="regionFilterGroup" role="group" aria-label="Filter Kenya health facilities by region">
+                    <button type="button" class="btn btn-sm btn-teal text-white rounded-pill px-3 fw-semibold active" data-region="all">All Kenya</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary rounded-pill px-3 fw-semibold" data-region="Nairobi">Nairobi</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary rounded-pill px-3 fw-semibold" data-region="Coast">Mombasa / Coast</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary rounded-pill px-3 fw-semibold" data-region="Western">Kisumu &amp; Eldoret</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary rounded-pill px-3 fw-semibold" data-region="Rift & Central">Nakuru &amp; Nyeri</button>
+                </div>
+            </div>
+
+            <div class="row g-4 align-items-stretch">
+                <!-- Facility List Sidebar -->
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm rounded-4 h-100">
+                        <div class="card-header bg-white py-3 px-4 border-bottom">
+                            <h3 class="h6 fw-bold text-dark mb-0"><i class="bi bi-hospital text-teal me-2"></i>Featured Care Centres</h3>
+                        </div>
+                        <div class="list-group list-group-flush facility-list-scroll" id="kenyaFacilityList">
+                            <!-- Populated dynamically via js/script.js -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Leaflet Map of Kenya -->
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                        <div id="kenyaMap" class="kenya-map-container" role="region" aria-label="Interactive map of HIV care facilities in Kenya"></div>
+                        <div class="card-footer bg-white py-2 px-4 d-flex flex-wrap justify-content-between align-items-center small text-muted gap-2">
+                            <span><i class="bi bi-info-circle text-teal me-1"></i>Click any marker on the Kenya map to view clinic services and hours.</span>
+                            <button type="button" id="resetKenyaMapBtn" class="btn btn-sm btn-outline-teal rounded-pill px-3 fw-semibold">
+                                <i class="bi bi-arrows-fullscreen me-1"></i>Reset Full Kenya View
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Direct Channels -->
+    <section class="py-5 bg-white">
+        <div class="container py-2">
+            <div class="row g-4">
+                <div class="col-lg-7">
+                    <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 border-top-teal">
+                        <span class="section-eyebrow">Confidential Inquiry</span>
+                        <h2 class="fw-extrabold text-dark mt-1 mb-2">Send Us a Message</h2>
+                        <p class="text-muted small mb-4">Have a question about HIV testing, ART adherence, PrEP/PEP availability, or community outreach in Kenya? Reach out confidentially.</p>
+
+                        <form id="contactInquiryForm" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="contactName" class="form-label small fw-bold">Full Name (or Alias)</label>
+                                    <input type="text" class="form-control" id="contactName" placeholder="e.g., Amina Wanjiku" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="contactEmail" class="form-label small fw-bold">Email Address</label>
+                                    <input type="email" class="form-control" id="contactEmail" placeholder="you@example.co.ke" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="contactCounty" class="form-label small fw-bold">County in Kenya</label>
+                                    <select class="form-select" id="contactCounty" required>
+                                        <option value="" selected disabled>Select your county...</option>
+                                        <option value="Nairobi">Nairobi</option>
+                                        <option value="Mombasa">Mombasa</option>
+                                        <option value="Kisumu">Kisumu</option>
+                                        <option value="Nakuru">Nakuru</option>
+                                        <option value="Uasin Gishu">Uasin Gishu (Eldoret)</option>
+                                        <option value="Kiambu">Kiambu</option>
+                                        <option value="Machakos">Machakos</option>
+                                        <option value="Nyeri">Nyeri</option>
+                                        <option value="Kilifi">Kilifi</option>
+                                        <option value="Kakamega">Kakamega</option>
+                                        <option value="Other County">Other Kenyan County</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="contactTopic" class="form-label small fw-bold">Topic</label>
+                                    <select class="form-select" id="contactTopic" required>
+                                        <option value="Testing & Counselling">HIV Testing &amp; Self-Test Kits</option>
+                                        <option value="PrEP / PEP Guidance">PrEP or 72-Hour PEP Guidance</option>
+                                        <option value="ART & CCC Referral">ART / CCC Facility Referral</option>
+                                        <option value="Community Outreach">School / Community Awareness Workshop</option>
+                                        <option value="General Question">General Question</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="contactMessage" class="form-label small fw-bold">Your Message</label>
+                                    <textarea class="form-control" id="contactMessage" rows="4" placeholder="Write your question or request here..." required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check small">
+                                        <input class="form-check-input" type="checkbox" id="privacyConsent" required>
+                                        <label class="form-check-label text-muted" for="privacyConsent">
+                                            I understand that my inquiry is handled confidentially in line with AfyaBora Kenya privacy standards.
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12 pt-2">
+                                    <button type="submit" class="btn btn-teal text-white fw-bold rounded-pill px-4 py-2">
+                                        <i class="bi bi-send-fill me-2"></i>Send Confidential Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div id="contactFormFeedback" class="mt-4 d-none" role="alert"></div>
+                    </div>
+                </div>
+
+                <!-- Office Details & Social Media Card -->
+                <div class="col-lg-5">
+                    <div class="d-grid gap-4 h-100">
+                        <div class="card border-0 shadow-sm rounded-4 p-4 bg-mint">
+                            <h3 class="h5 fw-bold text-dark mb-3"><i class="bi bi-building text-teal me-2"></i>AfyaBora Kenya Coordination Hub</h3>
+                            <ul class="list-unstyled small d-grid gap-3 mb-0">
+                                <li class="d-flex gap-3">
+                                    <i class="bi bi-geo-alt-fill text-teal fs-5"></i>
+                                    <div>
+                                        <strong class="d-block text-dark">Head Office Location</strong>
+                                        <span class="text-muted">AfyaBora Public Health Hub, Hospital Road, Upper Hill, Nairobi, Kenya</span>
+                                    </div>
+                                </li>
+                                <li class="d-flex gap-3">
+                                    <i class="bi bi-clock-fill text-teal fs-5"></i>
+                                    <div>
+                                        <strong class="d-block text-dark">Support Desk Hours</strong>
+                                        <span class="text-muted">Mon – Fri: 8:00 AM – 6:00 PM EAT<br>Emergency PEP &amp; 1190 Hotline: 24/7 Nationwide</span>
+                                    </div>
+                                </li>
+                                <li class="d-flex gap-3">
+                                    <i class="bi bi-envelope-paper-fill text-teal fs-5"></i>
+                                    <div>
+                                        <strong class="d-block text-dark">Email &amp; Telephone</strong>
+                                        <span class="text-muted">care@afyabora.or.ke | +254 719 000 000</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card border-0 shadow-sm rounded-4 p-4 border-top-green">
+                            <h3 class="h5 fw-bold text-dark mb-2"><i class="bi bi-share-fill text-success me-2"></i>Connect on Social Media</h3>
+                            <p class="small text-muted mb-3">Follow AfyaBora Kenya for daily U=U updates, youth-friendly HIV prevention tips, and community health drives across all 47 counties.</p>
+                            <div class="d-grid gap-2 small">
+                                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark text-start rounded-3 d-flex align-items-center justify-content-between">
+                                    <span><i class="bi bi-facebook text-primary me-2"></i>Facebook — @AfyaBoraKenya</span>
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+                                <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark text-start rounded-3 d-flex align-items-center justify-content-between">
+                                    <span><i class="bi bi-twitter-x me-2"></i>X (Twitter) — @AfyaBoraKE</span>
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+                                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark text-start rounded-3 d-flex align-items-center justify-content-between">
+                                    <span><i class="bi bi-instagram text-danger me-2"></i>Instagram — @afyabora.kenya</span>
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+                                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark text-start rounded-3 d-flex align-items-center justify-content-between">
+                                    <span><i class="bi bi-youtube text-danger me-2"></i>YouTube — AfyaBora Health Channel</span>
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+                                <a href="https://wa.me/254719000000" target="_blank" rel="noopener noreferrer" class="btn btn-outline-success text-start rounded-3 d-flex align-items-center justify-content-between">
+                                    <span><i class="bi bi-whatsapp me-2"></i>WhatsApp Info Line — +254 719 000 000</span>
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4 pb-4 border-bottom border-secondary">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="brand-cross d-inline-flex align-items-center justify-content-center rounded-3 text-white">
+                            <i class="bi bi-heart-pulse-fill"></i>
+                        </span>
+                        <span class="fs-4 fw-extrabold text-white">Afya<span class="text-info">Bora</span></span>
+                        <span class="badge bg-success">KENYA</span>
+                    </div>
+                    <p class="small text-secondary mb-3">Empowering Kenyans with clear, accurate, stigma-free HIV &amp; AIDS education, prevention tools, and links to care.</p>
+                    <div class="d-flex align-items-center gap-2 social-links" aria-label="AfyaBora Kenya Social Media">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook" title="Follow AfyaBora Kenya on Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="X (Twitter)" title="Follow AfyaBora Kenya on X">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram" title="Follow AfyaBora Kenya on Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="YouTube" title="Watch AfyaBora Kenya on YouTube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/254719000000" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="WhatsApp Helpline" title="Chat on WhatsApp">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <h4 class="h6 fw-bold text-white mb-3">Explore Sections</h4>
+                    <ul class="list-unstyled small d-grid gap-2">
+                        <li><a href="index.html#basics" class="text-secondary text-decoration-none">HIV vs. AIDS</a></li>
+                        <li><a href="index.html#testing" class="text-secondary text-decoration-none">Testing &amp; Window Estimator</a></li>
+                        <li><a href="index.html#treatment" class="text-secondary text-decoration-none">ART (TLD) &amp; U=U</a></li>
+                        <li><a href="index.html#knowledge-quest" class="text-secondary text-decoration-none">HIV Knowledge Quest Game</a></li>
+                        <li><a href="contact.html" class="text-info text-decoration-none fw-semibold"><i class="bi bi-geo-alt-fill me-1"></i>Contact &amp; Kenya Care Map</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-5">
+                    <h4 class="h6 fw-bold text-white mb-3">Medical Disclaimer</h4>
+                    <p class="small text-secondary mb-0">
+                        AfyaBora provides public health education and does not replace professional medical diagnosis or clinical care. Always consult a qualified healthcare provider or visit a Kenyan Comprehensive Care Centre (CCC) for testing, ART, PrEP, or emergency PEP.
+                    </p>
+                </div>
+            </div>
+            <div class="text-center small text-secondary pt-3">
+                &copy; 2026 AfyaBora Kenya. Aligned with NASCOP &amp; WHO Public Health Guidance.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal 1: Emergency PEP Guide -->
+    <div class="modal fade" id="pepEmergencyModal" tabindex="-1" aria-labelledby="pepEmergencyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 border-0 shadow">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title fw-bold" id="pepEmergencyModalLabel"><i class="bi bi-exclamation-octagon-fill me-2"></i>Emergency PEP (Within 72 Hours)</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 small">
+                    <p class="fw-bold text-dark">If you think you may have been exposed to HIV (condom breakage, sexual assault, needle-stick injury, or sharing needles):</p>
+                    <ol class="d-grid gap-2 ps-3 mb-3">
+                        <li><strong>Go to a Kenyan hospital, health centre, or CCC immediately</strong>—ideally within <strong>24 hours</strong> and no later than <strong>72 hours</strong>.</li>
+                        <li>Do <strong>not</strong> wait for symptoms to appear.</li>
+                        <li>A healthcare provider will perform a rapid HIV test and prescribe a <strong>28-day course of PEP</strong> if eligible.</li>
+                        <li>Take all 28 days of medication exactly as prescribed and attend follow-up testing.</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm rounded-pill px-3" data-bs-dismiss="modal">Close</button>
+                    <a href="#kenya-map-section" class="btn btn-danger btn-sm rounded-pill px-3 fw-bold" data-bs-dismiss="modal">Locate Clinic on Map</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5.3 JS Bundle via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Leaflet JS for Interactive Kenya Map -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- Custom App Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,307 @@
+/* ==========================================================================
+   AfyaBora Kenya - Custom Stylesheet (Bootstrap 5 Enhanced)
+   ========================================================================== */
+
+:root {
+    --afya-teal: #0f766e;
+    --afya-teal-dark: #115e59;
+    --afya-teal-soft: #ccfbf1;
+    --afya-green: #15803d;
+    --afya-red: #b91c1c;
+    --afya-mint: #f4f9f8;
+    --afya-slate: #0f172a;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #1e293b;
+    line-height: 1.65;
+    scroll-behavior: smooth;
+}
+
+.fw-extrabold {
+    font-weight: 800;
+}
+
+.max-w-750 {
+    max-width: 750px;
+}
+
+/* Custom Theme Utilities */
+.text-teal { color: var(--afya-teal) !important; }
+.bg-teal { background-color: var(--afya-teal) !important; }
+.bg-teal-soft { background-color: var(--afya-teal-soft) !important; }
+.bg-mint { background-color: var(--afya-mint) !important; }
+.border-teal { border-color: var(--afya-teal) !important; }
+
+.btn-teal {
+    background-color: var(--afya-teal);
+    border-color: var(--afya-teal);
+}
+
+.btn-teal:hover,
+.btn-teal:focus {
+    background-color: var(--afya-teal-dark);
+    border-color: var(--afya-teal-dark);
+}
+
+/* Top PEP Alert Bar */
+.pep-alert-bar {
+    background: linear-gradient(90deg, #991b1b 0%, var(--afya-red) 100%);
+}
+
+/* Brand Logo & Navbar */
+.brand-cross {
+    width: 34px;
+    height: 34px;
+    background-color: var(--afya-red);
+    font-size: 1.1rem;
+}
+
+.kenya-pill {
+    background-color: var(--afya-slate);
+    color: #ffffff;
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+}
+
+.navbar .nav-link {
+    color: #334155;
+    border-radius: 6px;
+    padding: 0.45rem 0.65rem;
+    transition: all 0.2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--afya-teal);
+    background-color: var(--afya-mint);
+}
+
+/* Hero Carousel */
+.hero-slide {
+    min-height: 580px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.glass-badge {
+    background: rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    color: #ffffff;
+}
+
+.glass-card {
+    background: rgba(15, 23, 42, 0.58);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+}
+
+/* Section Eyebrow */
+.section-eyebrow {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: var(--afya-teal);
+}
+
+/* Card Accents */
+.border-top-teal { border-top: 4px solid var(--afya-teal) !important; }
+.border-top-red { border-top: 4px solid var(--afya-red) !important; }
+.border-top-green { border-top: 4px solid var(--afya-green) !important; }
+.border-top-amber { border-top: 4px solid #d97706 !important; }
+
+/* Stage Pills */
+#stagesTab .nav-link {
+    background-color: #f1f5f9;
+    color: #475569;
+    border: 1px solid #e2e8f0;
+}
+
+#stagesTab .nav-link.active {
+    background-color: var(--afya-teal);
+    color: #ffffff;
+    border-color: var(--afya-teal);
+}
+
+/* Safe Contact Chips */
+.safe-chip {
+    background-color: #dcfce7;
+    color: #166534;
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+/* U=U Callout Banner */
+.uu-banner {
+    background: linear-gradient(135deg, var(--afya-teal) 0%, var(--afya-green) 100%);
+}
+
+/* Knowledge Quest Game Section */
+.quest-section {
+    background: linear-gradient(135deg, #0f172a 0%, #115e59 100%);
+}
+
+.option-btn {
+    text-align: left;
+    border: 2px solid #e2e8f0;
+    background-color: #ffffff;
+    color: #0f172a;
+    font-weight: 600;
+    padding: 14px 18px;
+    border-radius: 12px;
+    transition: all 0.18s ease;
+}
+
+.option-btn:hover:not(:disabled) {
+    border-color: var(--afya-teal);
+    background-color: var(--afya-mint);
+    transform: translateX(3px);
+}
+
+.option-btn.correct {
+    border-color: var(--afya-green) !important;
+    background-color: #dcfce7 !important;
+    color: #14532d !important;
+}
+
+.option-btn.incorrect {
+    border-color: var(--afya-red) !important;
+    background-color: #fee2e2 !important;
+    color: #7f1d1d !important;
+}
+
+/* Interactive Myths vs Facts Flip/Reveal Cards */
+.myth-flip-card {
+    cursor: pointer;
+    min-height: 195px;
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.myth-flip-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.09) !important;
+}
+
+.myth-flip-card.is-fact {
+    background-color: #f0fdf4 !important;
+    border-color: #86efac !important;
+}
+
+/* Glossary Cards */
+.glossary-card {
+    transition: transform 0.2s ease;
+}
+
+.glossary-card:hover {
+    transform: translateY(-2px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+    .hero-slide {
+        min-height: 520px;
+    }
+    .hero-slide h1 {
+        font-size: 2rem;
+    }
+}
+
+
+/* ==========================================================================
+   Social Media Icons & Contact / Kenya Map Page Styles
+   ========================================================================== */
+
+.btn-outline-teal {
+    color: var(--afya-teal);
+    border-color: var(--afya-teal);
+}
+
+.btn-outline-teal:hover,
+.btn-outline-teal:focus {
+    background-color: var(--afya-teal);
+    border-color: var(--afya-teal);
+    color: #ffffff;
+}
+
+.social-icon-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    color: #ffffff;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.social-icon-btn:hover,
+.social-icon-btn:focus {
+    background-color: var(--afya-teal);
+    border-color: var(--afya-teal);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.contact-hero {
+    background: linear-gradient(135deg, #0f172a 0%, var(--afya-teal-dark) 60%, var(--afya-green) 100%);
+}
+
+.kenya-map-container {
+    width: 100%;
+    min-height: 460px;
+    height: 100%;
+    z-index: 1;
+}
+
+.facility-list-scroll {
+    max-height: 460px;
+    overflow-y: auto;
+}
+
+.facility-item {
+    cursor: pointer;
+    transition: background-color 0.18s ease, border-left 0.18s ease;
+    border-left: 4px solid transparent;
+}
+
+.facility-item:hover,
+.facility-item.active-facility {
+    background-color: var(--afya-mint);
+    border-left-color: var(--afya-teal);
+}
+
+.afya-map-pin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--afya-teal);
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(15, 23, 42, 0.35);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 767.98px) {
+    .kenya-map-container {
+        min-height: 350px;
+    }
+    .facility-list-scroll {
+        max-height: 280px;
+    }
+}
